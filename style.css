@@ -1,5 +1,6 @@
 body {
   background-color: #eee;
+
 }
 .wrapper {
   width: 30%;
@@ -14,22 +15,22 @@ body {
   color: #00BCE1;
   width: 80%;
   height: 40%;
-  margin: 1px 40px;
+  margin: 2px 40px;
   display: block;
   text-align: center;
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.5em;
   font-family: sans-serif;
-padding-top: 20px;
+padding: 15px 1px;
 }
 #signin {
   border: 1px solid #00BCE1;
   background: #00BCE1;
   color: #fff;
   width: 80%;
-  height: 40%;
-  margin: 1px 40px;
+  height: 60px;
+  margin: 2px 40px;
   display: block;
   font-size: 1.5em;
   font-weight: bolder;
@@ -39,8 +40,8 @@ padding-top: 20px;
   border: 1px solid #ccc;
   background: #FFFB9B;
   width: 80%;
-  height: 40%;
-  margin: 1px 40px;
+  height: 60px;
+  margin: 2px 40px;
   display: block;
 }
   #forget {
@@ -84,4 +85,21 @@ a:hover{
 }
 #blue:hover {
   background: #B5FFFF;
+}
+@media only screen and (max-width: 980px) {
+  .wrapper { width: 90%; }
+}
+@media only screen and (min-width: 600px) {
+  .wrapper { width: 500px; }
+  @media only screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    float: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .column {
+    width: 33.333%;
+    float: left;
+  }
 }
